@@ -22,6 +22,7 @@ export default {
       type: 'string',
       validation: (rule: { required: () => any; }) => rule.required(),
     },
+    /* Slug */
     // {
     //   name: 'slug',
     //   title: 'Slug',
@@ -33,42 +34,44 @@ export default {
     //   },
     //   validation: (rule: { required: () => any; }) => rule.required(),
     // },
-    // {
-    //   name: 'coverImage',
-    //   title: 'Cover Image',
-    //   type: 'image',
-    //   options: {
-    //     hotspot: true,
-    //   },
-    // },
+    /* Image */
     {
-      name: 'content',
-      title: 'Content',
-      type: 'array',
-      of: [
-        {type: 'block'},
-        {
-          type: 'image',
-          options: {
-            hotspot: true,
-          },
-          fields: [
-            {
-              name: 'caption',
-              type: 'string',
-              title: 'Image caption',
-              description: 'Caption displayed below the image.',
-            },
-            {
-              name: 'alt',
-              type: 'string',
-              title: 'Alternative text',
-              description: 'Important for SEO and accessiblity.',
-            },
-          ],
-        },
-      ],
+      name: 'coverImage',
+      title: 'Cover Image',
+      type: 'image',
+      options: {
+        hotspot: true,
+      },
     },
+    /* Content */
+    // {
+    //   name: 'content',
+    //   title: 'Content',
+    //   type: 'array',
+    //   of: [
+    //     {type: 'block'},
+    //     {
+    //       type: 'image',
+    //       options: {
+    //         hotspot: true,
+    //       },
+    //       fields: [
+    //         {
+    //           name: 'caption',
+    //           type: 'string',
+    //           title: 'Image caption',
+    //           description: 'Caption displayed below the image.',
+    //         },
+    //         {
+    //           name: 'alt',
+    //           type: 'string',
+    //           title: 'Alternative text',
+    //           description: 'Important for SEO and accessiblity.',
+    //         },
+    //       ],
+    //     },
+    //   ],
+    // },
     {
       name: 'date',
       title: 'Date',
