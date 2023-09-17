@@ -39,19 +39,14 @@ export default {
   ],
   orderings: [
     {
-      title: 'Release Date, New',
-      name: 'releaseDateDesc',
-      by: [{field: 'releaseDate', direction: 'desc'}],
+      title: 'berdasarkan number terbaru',
+      name: 'number',
+      by: [{field: 'number', direction: 'desc'}],
     },
     {
-      title: 'Release Date, Old',
-      name: 'releaseDateAsc',
-      by: [{field: 'releaseDate', direction: 'asc'}],
-    },
-    {
-      title: 'Popularity',
-      name: 'popularityDesc',
-      by: [{field: 'popularity', direction: 'desc'}],
+      title: 'berdasarkan number terlama',
+      name: 'number',
+      by: [{field: 'number', direction: 'asc'}],
     },
   ],
 }
