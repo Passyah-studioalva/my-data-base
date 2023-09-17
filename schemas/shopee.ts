@@ -79,4 +79,16 @@ export default {
       initialValue: () => new Date().toISOString(),
     },
   ],
+  orderings: [
+    {
+      title: 'Number Old',
+      name: 'number',
+      by: [{field: 'number', direction: 'desc'}],
+    },
+    {
+      title: 'Number New',
+      name: 'number',
+      by: [{field: 'number', direction: 'asc'}],
+    },
+  ],
 }
