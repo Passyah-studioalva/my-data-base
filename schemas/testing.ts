@@ -4,15 +4,15 @@ export default {
   type: 'document',
   title: 'Testing',
   fields: [
-    // {
-    //   name: 'title',
-    //   title: 'Title',
-    //   type: 'string',
-    //   validation: (rule: { required: () => any; }) => rule.required(),
-    // },
+    {
+      name: 'title',
+      title: 'Title',
+      type: 'string',
+      validation: (rule: { required: () => any; }) => rule.required(),
+    },
     {
       name: 'number',
-      title: 'Number',
+      title: 'Title',
       type: 'number',
       validation: (rule: { required: () => any; }) => rule.required(),
     },
