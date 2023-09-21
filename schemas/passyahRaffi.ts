@@ -6,8 +6,8 @@ export default defineType({
   title: 'PassyahRaffi',
   fields: [
     defineField({
-      name: 'number',
-      title: 'Number',
+      name: 'order',
+      title: 'Order',
       type: 'number',
       validation: (rule: {required: () => any}) => rule.required(),
     }),
@@ -64,14 +64,14 @@ export default defineType({
   ],
   orderings: [
     {
-      title: 'Number Old',
-      name: 'number',
-      by: [{field: 'number', direction: 'desc'}],
+      title: 'Order Old',
+      name: 'order',
+      by: [{field: 'order', direction: 'desc'}],
     },
     {
-      title: 'Number New',
-      name: 'number',
-      by: [{field: 'number', direction: 'asc'}],
+      title: 'Order New',
+      name: 'order',
+      by: [{field: 'order', direction: 'asc'}],
     },
   ],
   preview: {
