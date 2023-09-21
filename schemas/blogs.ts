@@ -44,11 +44,6 @@ export default {
       of: [{type: 'reference', to: {type: 'category'}}],
     },
     {
-      name: 'publishedAt',
-      title: 'Published at',
-      type: 'datetime',
-    },
-    {
       name: 'body',
       title: 'Body',
       type: 'blockContent',
@@ -57,6 +52,12 @@ export default {
       name: 'excerpt',
       title: 'Excerpt',
       type: 'text',
+    },
+    {
+      name: 'publishedAt',
+      title: 'Published at',
+      type: 'datetime',
+      initialValue: () => new Date().toISOString(),
     },
   ],
   orderings: [
