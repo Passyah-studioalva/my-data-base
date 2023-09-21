@@ -1,5 +1,5 @@
 export default {
-  name: 'passyahRaffi',
+  name: 'PassyahRaffi',
   title: 'PassyahRaffi',
   type: 'document',
   fields: [
