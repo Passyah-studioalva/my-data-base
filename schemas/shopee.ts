@@ -91,4 +91,19 @@ export default {
       by: [{field: 'number', direction: 'asc'}],
     },
   ],
+  preview: {
+    select: {
+      title: 'title',
+      number: 'number',
+      media: 'coverImage',
+    },
+    prepare(selection: {title:any, number: any}) {
+      const {title, number} = selection
+      return {
+        ...selection,
+        title: `${title}`,
+        subtitle: number && `uratan ke ${number}`
+      }
+    },
+  },
 }

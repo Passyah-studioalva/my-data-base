@@ -1,4 +1,5 @@
 import {defineField, defineType} from 'sanity'
+import author from './author'
 
 export default defineType({
   name: 'passyahRaffi',
@@ -74,15 +75,48 @@ export default defineType({
       by: [{field: 'order', direction: 'asc'}],
     },
   ],
+  // preview: {
+    /* DEFAULT */
+    // select: {
+    //   title: 'title',
+    //   author: 'author.name',
+    //   order: 'order',
+    //   media: 'mainImage',
+    // },
+    /* DEFAULT */
+    // prepare(selection: {author: any}) {
+    //   const {author} = selection
+    //   return {...selection, subtitle: author && `by ${author}`}
+    // },
+
+    /* EXAMPLE 1 TITLE & ORDER */
+  // preview: {
+    // select: {
+    //   title: 'title',
+    //   author: 'author.name',
+    //   order: 'order',
+    //   media: 'mainImage',
+    // },
+    // prepare(selection: {order: any}) {
+    //   const {order} = selection
+    //   return {...selection, subtitle: order && `urutan ke ${order}`}
+    // },
+
+  /* EXAMPLE 2 ORDER & TITLE */
   preview: {
     select: {
       title: 'title',
       author: 'author.name',
+      order: 'order',
       media: 'mainImage',
     },
-    prepare(selection: {author: any}) {
-      const {author} = selection
-      return {...selection, subtitle: author && `by ${author}`}
+    prepare(selection: {title:any, order: any}) {
+      const {title, order} = selection
+      return {
+        ...selection,
+        title: `${title}`,
+        subtitle: order && `order to ${order}`
+      }
     },
   },
 })
