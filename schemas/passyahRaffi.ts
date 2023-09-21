@@ -1,5 +1,5 @@
 export default {
-  name: 'blogs',
+  name: 'passyahRaffi',
   title: 'PassyahRaffi',
   type: 'document',
   fields: [

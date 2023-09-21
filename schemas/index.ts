@@ -2,7 +2,7 @@
 import shopee from './shopee'
 import blockContent from './blockContent'
 import category from './category'
-import blogs from './blogs'
+import passyahRaffi from './passyahRaffi'
 import author from './author'
 
-export const schemaTypes = [shopee, blogs, author, category, blockContent]
+export const schemaTypes = [shopee, passyahRaffi, author, category, blockContent]
