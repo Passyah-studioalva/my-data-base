@@ -53,6 +53,11 @@ export default {
       title: 'Body',
       type: 'blockContent',
     },
+    {
+      name: 'excerpt',
+      title: 'Excerpt',
+      type: 'text',
+    },
   ],
   orderings: [
     {
