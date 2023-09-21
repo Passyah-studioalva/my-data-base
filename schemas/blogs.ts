@@ -1,8 +1,14 @@
 export default {
-  name: 'post',
-  title: 'Post',
+  name: 'blogs',
+  title: 'PassyahRaffi',
   type: 'document',
   fields: [
+    {
+      name: 'number',
+      title: 'Number',
+      type: 'number',
+      validation: (rule: {required: () => any}) => rule.required(),
+    },
     {
       name: 'title',
       title: 'Title',
@@ -48,7 +54,18 @@ export default {
       type: 'blockContent',
     },
   ],
-
+  orderings: [
+    {
+      title: 'Number Old',
+      name: 'number',
+      by: [{field: 'number', direction: 'desc'}],
+    },
+    {
+      title: 'Number New',
+      name: 'number',
+      by: [{field: 'number', direction: 'asc'}],
+    },
+  ],
   preview: {
     select: {
       title: 'title',
