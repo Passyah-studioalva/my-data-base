@@ -64,12 +64,12 @@ export default defineType({
   ],
   orderings: [
     {
-      title: 'Order Old',
+      title: 'Order New',
       name: 'order',
       by: [{field: 'order', direction: 'desc'}],
     },
     {
-      title: 'Order New',
+      title: 'Order Old',
       name: 'order',
       by: [{field: 'order', direction: 'asc'}],
     },

@@ -81,12 +81,12 @@ export default {
   ],
   orderings: [
     {
-      title: 'Number Old',
+      title: 'Number New',
       name: 'number',
       by: [{field: 'number', direction: 'desc'}],
     },
     {
-      title: 'Number New',
+      title: 'Number Old',
       name: 'number',
       by: [{field: 'number', direction: 'asc'}],
     },
