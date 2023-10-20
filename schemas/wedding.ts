@@ -104,6 +104,11 @@ export default defineType({
       of: [{type: 'string'}],
     }),
     defineField({
+      name: 'urlWebAppGSpreadsheets',
+      title: 'Url Web App Google Spreadsheets',
+      type: 'string',
+    }),
+    defineField({
       name: 'publishedAt',
       title: 'Published at',
       type: 'datetime',
