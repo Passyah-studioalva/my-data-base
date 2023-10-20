@@ -1,5 +1,6 @@
 import shopee from './shopee'
 import passyahRaffi from './passyahRaffi'
+import wedding from './wedding'
 import project from './project'
 import author from './author'
 import category from './category'
@@ -9,6 +10,7 @@ import blockContent from './blockContent'
 export const schemaTypes = [
                                 shopee,
                                 passyahRaffi,
+                                wedding,
                                 project,
                                 author,
                                 category,

@@ -58,7 +58,12 @@ export default defineType({
       name: 'descriptions',
       title: 'Descriptions',
       type: 'array',
-      of: [{type: 'reference', to: {type: 'description'}}],
+      of: [{
+        type: 'reference',
+        to: {
+          type: 'description'
+        }
+      }],
     }),
     defineField({
       name: 'publishedAt',
