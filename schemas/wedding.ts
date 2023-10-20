@@ -82,14 +82,24 @@ export default defineType({
       of: [{type: 'string'}],
     }),
     defineField({
+      name: 'nameBankFirst',
+      title: 'Nama BANK 1',
+      type: 'string',
+    }),
+    defineField({
       name: 'detailBankFirst',
-      title: 'BANK 1 - Nama, Atas Nama, No. Rekening',
+      title: 'BANK 1 - Atas Nama, No. Rekening',
       type: 'array',
       of: [{type: 'string'}],
     }),
     defineField({
+      name: 'nameBankLast',
+      title: 'Nama BANK 1',
+      type: 'string',
+    }),
+    defineField({
       name: 'detailBankLast',
-      title: 'BANK 2 - Nama, Atas Nama, No. Rekening',
+      title: 'BANK 2 - Atas Nama, No. Rekening',
       type: 'array',
       of: [{type: 'string'}],
     }),
