@@ -13,6 +13,11 @@ export default defineType({
     }),
     /* OPENING */
     defineField({
+      name: 'audio',
+      title: 'Audio',
+      type: 'file',
+    }),
+    defineField({
       name: 'invitationTitle',
       title: 'Title Undangan',
       type: 'string',
