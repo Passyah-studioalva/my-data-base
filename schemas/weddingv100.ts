@@ -81,15 +81,29 @@ export default defineType({
       of: [{type: 'string'}],
     }),
     defineField({
-      name: 'nameBankFirst',
+      name: 'bank1',
       title: 'Nama BANK 1 (JIKA CLIENT ISI BANK 1 DENGAN BARCODE MAKA INI KOSONGKAN)',
-      type: 'string',
+      type: 'array',
+      of: [{
+        type: 'reference',
+        to: {
+          type: 'bank'
+        }
+      }],
     }),
-    defineField({
-      name: 'imgBankFirst',
-      title: 'Image BANK 1 (JIKA CLIENT ISI BANK 1 DENGAN BARCODE MAKA INI KOSONGKAN)',
-      type: 'image',
-    }),
+    // defineField({
+    //   name: 'nameBankFirst',
+    //   title: 'Nama BANK 1 (JIKA CLIENT ISI BANK 1 DENGAN BARCODE MAKA INI KOSONGKAN)',
+    //   type: 'string',
+    // }),
+    // defineField({
+    //   name: 'imgBankFirst',
+    //   title: 'Image BANK 1 (JIKA CLIENT ISI BANK 1 DENGAN BARCODE MAKA INI KOSONGKAN)',
+    //   type: 'image',
+    //   options: {
+    //     hotspot: true,
+    //   },
+    // }),
     defineField({
       name: 'detailBankFirst',
       title: 'BANK 1 - Atas Nama, No. Rekening (JIKA CLIENT ISI BANK 1 DENGAN BARCODE MAKA INI KOSONGKAN)',
@@ -105,15 +119,29 @@ export default defineType({
       },
     }),
     defineField({
-      name: 'nameBankLast',
+      name: 'bank2',
       title: 'Nama BANK 2 (JIKA CLIENT ISI BANK 2 DENGAN BARCODE MAKA INI KOSONGKAN)',
-      type: 'string',
+      type: 'array',
+      of: [{
+        type: 'reference',
+        to: {
+          type: 'bank'
+        }
+      }],
     }),
-    defineField({
-      name: 'imgBankLast',
-      title: 'Image BANK 2 (JIKA CLIENT ISI BANK 1 DENGAN BARCODE MAKA INI KOSONGKAN)',
-      type: 'image',
-    }),
+    // defineField({
+    //   name: 'nameBankLast',
+    //   title: 'Nama BANK 2 (JIKA CLIENT ISI BANK 2 DENGAN BARCODE MAKA INI KOSONGKAN)',
+    //   type: 'string',
+    // }),
+    // defineField({
+    //   name: 'imgBankLast',
+    //   title: 'Image BANK 2 (JIKA CLIENT ISI BANK 1 DENGAN BARCODE MAKA INI KOSONGKAN)',
+    //   type: 'image',
+    //   options: {
+    //     hotspot: true,
+    //   },
+    // }),
     defineField({
       name: 'detailBankLast',
       title: 'BANK 2 - Atas Nama, No. Rekening (JIKA CLIENT ISI BANK 2 DENGAN BARCODE MAKA INI KOSONGKAN)',
