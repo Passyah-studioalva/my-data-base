@@ -17,7 +17,7 @@ export default defineType({
       type: 'file',
     }),
     defineField({
-      name: 'husbandWifeNickname',
+      name: 'nickname',
       title: 'Nama Mempelai Pria & Wanita',
       type: 'string',
     }),
@@ -26,7 +26,7 @@ export default defineType({
       title: 'Slug',
       type: 'slug',
       options: {
-        source: 'husbandWifeNickname',
+        source: 'nickname',
         maxLength: 96,
       },
     }),
