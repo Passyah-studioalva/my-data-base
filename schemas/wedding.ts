@@ -88,25 +88,41 @@ export default defineType({
     }),
     defineField({
       name: 'nameBankFirst',
-      title: 'Nama BANK 1',
+      title: 'Nama BANK 1 (JIKA CLIENT ISI BANK 1 DENGAN BARCODE MAKA INI KOSONGKAN)',
       type: 'string',
     }),
     defineField({
       name: 'detailBankFirst',
-      title: 'BANK 1 - Atas Nama, No. Rekening',
+      title: 'BANK 1 - Atas Nama, No. Rekening (JIKA CLIENT ISI BANK 1 DENGAN BARCODE MAKA INI KOSONGKAN)',
       type: 'array',
       of: [{type: 'string'}],
     }),
     defineField({
+      name: 'barcodeBankFirst',
+      title: 'BANK 1 - Image Barcode (JIKA CLIENT ISI BANK 1 DENGAN NO REK MAKA INI KOSONGKAN)',
+      type: 'image',
+      options: {
+        hotspot: true,
+      },
+    }),
+    defineField({
       name: 'nameBankLast',
-      title: 'Nama BANK 1',
+      title: 'Nama BANK 2 (JIKA CLIENT ISI BANK 2 DENGAN BARCODE MAKA INI KOSONGKAN)',
       type: 'string',
     }),
     defineField({
       name: 'detailBankLast',
-      title: 'BANK 2 - Atas Nama, No. Rekening',
+      title: 'BANK 2 - Atas Nama, No. Rekening (JIKA CLIENT ISI BANK 2 DENGAN BARCODE MAKA INI KOSONGKAN)',
       type: 'array',
       of: [{type: 'string'}],
+    }),
+    defineField({
+      name: 'barcodeBankLast',
+      title: 'BANK 2 - Image Barcode (JIKA CLIENT ISI BANK 2 DENGAN NO REK MAKA INI KOSONGKAN)',
+      type: 'image',
+      options: {
+        hotspot: true,
+      },
     }),
     defineField({
       name: 'urlWebAppGSpreadsheets',
