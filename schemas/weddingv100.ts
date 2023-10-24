@@ -1,9 +1,9 @@
 import {defineField, defineType} from 'sanity'
 
 export default defineType({
-  name: 'wedding',
+  name: 'weddingv100',
   type: 'document',
-  title: 'Wedding',
+  title: 'Wedding v1.0.0',
   fields: [
     defineField({
       name: 'order',
