@@ -156,9 +156,8 @@ export default defineType({
   ],
   preview: {
     select: {
-      title: 'husbandWifeNickname',
+      title: 'nickname',
       order: 'order',
-      media: '../public/mempelai.png',
     },
     prepare(selection: {title: any; order: any}) {
       const {title, order} = selection
