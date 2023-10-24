@@ -91,27 +91,14 @@ export default defineType({
         }
       }],
     }),
-    // defineField({
-    //   name: 'nameBankFirst',
-    //   title: 'Nama BANK 1 (JIKA CLIENT ISI BANK 1 DENGAN BARCODE MAKA INI KOSONGKAN)',
-    //   type: 'string',
-    // }),
-    // defineField({
-    //   name: 'imgBankFirst',
-    //   title: 'Image BANK 1 (JIKA CLIENT ISI BANK 1 DENGAN BARCODE MAKA INI KOSONGKAN)',
-    //   type: 'image',
-    //   options: {
-    //     hotspot: true,
-    //   },
-    // }),
     defineField({
-      name: 'detailBankFirst',
+      name: 'detailBank1',
       title: 'BANK 1 - Atas Nama, No. Rekening (JIKA CLIENT ISI BANK 1 DENGAN BARCODE MAKA INI KOSONGKAN)',
       type: 'array',
       of: [{type: 'string'}],
     }),
     defineField({
-      name: 'barcodeBankFirst',
+      name: 'barcodeBank1',
       title: 'BANK 1 - Image Barcode (JIKA CLIENT ISI BANK 1 DENGAN NO REK MAKA INI KOSONGKAN)',
       type: 'image',
       options: {
@@ -129,27 +116,14 @@ export default defineType({
         }
       }],
     }),
-    // defineField({
-    //   name: 'nameBankLast',
-    //   title: 'Nama BANK 2 (JIKA CLIENT ISI BANK 2 DENGAN BARCODE MAKA INI KOSONGKAN)',
-    //   type: 'string',
-    // }),
-    // defineField({
-    //   name: 'imgBankLast',
-    //   title: 'Image BANK 2 (JIKA CLIENT ISI BANK 1 DENGAN BARCODE MAKA INI KOSONGKAN)',
-    //   type: 'image',
-    //   options: {
-    //     hotspot: true,
-    //   },
-    // }),
     defineField({
-      name: 'detailBankLast',
+      name: 'detailBank2',
       title: 'BANK 2 - Atas Nama, No. Rekening (JIKA CLIENT ISI BANK 2 DENGAN BARCODE MAKA INI KOSONGKAN)',
       type: 'array',
       of: [{type: 'string'}],
     }),
     defineField({
-      name: 'barcodeBankLast',
+      name: 'barcodeBank2',
       title: 'BANK 2 - Image Barcode (JIKA CLIENT ISI BANK 2 DENGAN NO REK MAKA INI KOSONGKAN)',
       type: 'image',
       options: {
