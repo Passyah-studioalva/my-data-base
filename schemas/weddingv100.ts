@@ -53,6 +53,11 @@ export default defineType({
       of: [{type: 'string'}],
     }),
     defineField({
+      name: 'countdown',
+      title: `Hari, Tanggal, Jam Acara (example format. 'Oct 27, 2025 13:00:00')`,
+      type: 'string',
+    }),
+    defineField({
       name: 'descAkad',
       title: 'Hari, Tanggal, Jam Akad, Lokasi',
       type: 'array',
