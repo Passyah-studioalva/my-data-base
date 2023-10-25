@@ -12,9 +12,15 @@ export default defineType({
       validation: (rule: {required: () => any}) => rule.required(),
     }),
     defineField({
-      name: 'audio',
+      name: 'audioSound',
       title: 'Audio',
-      type: 'file',
+      type: 'array',
+      of: [{
+        type: 'reference',
+        to: {
+          type: 'audios'
+        }
+      }],
     }),
     defineField({
       name: 'nickname',
@@ -54,7 +60,7 @@ export default defineType({
     }),
     defineField({
       name: 'countdown',
-      title: `Hari, Tanggal, Jam Acara (example format. 'Oct 27, 2025 13:00:00')`,
+      title: `Hari, Tanggal, Jam Acara (Ex. 'Oct 27, 2025 13:00:00')`,
       type: 'string',
     }),
     defineField({

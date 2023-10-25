@@ -6,6 +6,7 @@ import author from './author'
 import category from './category'
 import description from './description'
 import bank from './bank'
+import audio from './audio'
 import blockContent from './blockContent'
 
 export const schemaTypes = [
@@ -17,5 +18,6 @@ export const schemaTypes = [
   category,
   description,
   bank,
+  audio,
   blockContent,
 ]
