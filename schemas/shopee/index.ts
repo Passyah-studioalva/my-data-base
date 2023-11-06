@@ -48,6 +48,19 @@ export default defineType({
       ],
     }),
     defineField({
+      name: 'iconCategory',
+      title: 'Icon Category',
+      type: 'array',
+      of: [
+        {
+          type: 'reference',
+          to: {
+            type: 'iconCategory',
+          },
+        },
+      ],
+    }),
+    defineField({
       name: 'date',
       title: 'Date',
       type: 'datetime',

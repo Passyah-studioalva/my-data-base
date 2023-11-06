@@ -1,5 +1,6 @@
 import shopee from './shopee'
 import shopeeCategory from './shopee/shopeeCategory'
+import iconCategory from './shopee/iconCategory'
 import passyahRaffi from './passyahRaffi'
 import weddingv100 from './weddingv100'
 import project from './project'
@@ -13,6 +14,7 @@ import blockContent from './blockContent'
 export const schemaTypes = [
   shopee,
   shopeeCategory,
+  iconCategory,
   passyahRaffi,
   weddingv100,
   project,
