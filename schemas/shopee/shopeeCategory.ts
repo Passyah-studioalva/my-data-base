@@ -17,14 +17,5 @@ export default defineType({
       type: 'string',
       validation: (rule: {required: () => any}) => rule.required(),
     }),
-    defineField({
-      name: 'icon',
-      title: 'Icon ( https://www.flaticon.com )',
-      type: 'image',
-      validation: (rule: {required: () => any}) => rule.required(),
-      options: {
-        hotspot: true,
-      },
-    }),
   ],
 })
