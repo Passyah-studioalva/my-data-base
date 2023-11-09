@@ -7,10 +7,11 @@ import iconCategory from './shopee/iconCategory'
 import passyahRaffi from './passyahRaffi'
 
 /* WEDDING */
-import weddingv100 from './wedding'
-import iconWedding from './wedding/iconWedding'
-import audio from './wedding/audio'
-import bank from './wedding/bank'
+import weddingv100 from './wedding/weddingv100'
+import weddingv101 from './wedding/weddingv101'
+import iconWedding from './wedding/components/iconWedding'
+import audio from './wedding/components/audio'
+import bank from './wedding/components/bank'
 
 import project from './project'
 import author from './author'
@@ -29,6 +30,7 @@ export const schemaTypes = [
 
   /* WEDDING */
   weddingv100,
+  weddingv101,
   iconWedding,
   audio,
   bank,

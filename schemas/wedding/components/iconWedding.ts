@@ -7,13 +7,13 @@ export default defineType({
   fields: [
     defineField({
       name: 'titleIcon',
-      title: 'Judul Icon',
+      title: 'Template Judul Icon (ex. v1.0.0)',
       type: 'string',
       validation: (rule: {required: () => any}) => rule.required(),
     }),
     defineField({
       name: 'icon',
-      title: 'Icon v100',
+      title: 'Image Icon',
       type: 'image',
       validation: (rule: {required: () => any}) => rule.required(),
       options: {
