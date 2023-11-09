@@ -12,15 +12,23 @@ export default defineType({
       validation: (rule: {required: () => any}) => rule.required(),
     }),
     defineField({
+      name: 'iconWedding',
+      title: 'Icon',
+      type: 'reference',
+      to: [{ type: 'iconWedding' }],
+    }),
+    defineField({
       name: 'audioSound',
       title: 'Audio',
       type: 'array',
-      of: [{
-        type: 'reference',
-        to: {
-          type: 'audios'
-        }
-      }],
+      of: [
+        {
+          type: 'reference',
+          to: {
+            type: 'audios',
+          },
+        },
+      ],
     }),
     defineField({
       name: 'nickname',
@@ -95,16 +103,19 @@ export default defineType({
       name: 'bank1',
       title: 'Nama BANK 1 (JIKA CLIENT ISI BANK 1 DENGAN BARCODE MAKA INI KOSONGKAN)',
       type: 'array',
-      of: [{
-        type: 'reference',
-        to: {
-          type: 'bank'
-        }
-      }],
+      of: [
+        {
+          type: 'reference',
+          to: {
+            type: 'bank',
+          },
+        },
+      ],
     }),
     defineField({
       name: 'detailBank1',
-      title: 'BANK 1 - Atas Nama, No. Rekening (JIKA CLIENT ISI BANK 1 DENGAN BARCODE MAKA INI KOSONGKAN)',
+      title:
+        'BANK 1 - Atas Nama, No. Rekening (JIKA CLIENT ISI BANK 1 DENGAN BARCODE MAKA INI KOSONGKAN)',
       type: 'array',
       of: [{type: 'string'}],
     }),
@@ -120,16 +131,19 @@ export default defineType({
       name: 'bank2',
       title: 'Nama BANK 2 (JIKA CLIENT ISI BANK 2 DENGAN BARCODE MAKA INI KOSONGKAN)',
       type: 'array',
-      of: [{
-        type: 'reference',
-        to: {
-          type: 'bank'
-        }
-      }],
+      of: [
+        {
+          type: 'reference',
+          to: {
+            type: 'bank',
+          },
+        },
+      ],
     }),
     defineField({
       name: 'detailBank2',
-      title: 'BANK 2 - Atas Nama, No. Rekening (JIKA CLIENT ISI BANK 2 DENGAN BARCODE MAKA INI KOSONGKAN)',
+      title:
+        'BANK 2 - Atas Nama, No. Rekening (JIKA CLIENT ISI BANK 2 DENGAN BARCODE MAKA INI KOSONGKAN)',
       type: 'array',
       of: [{type: 'string'}],
     }),
@@ -169,13 +183,15 @@ export default defineType({
     select: {
       title: 'nickname',
       order: 'order',
+      image: 'iconWedding.icon.asset',
     },
-    prepare(selection: {title: any; order: any}) {
-      const {title, order} = selection
+    prepare(selection: {title: any; order: any; image: any}) {
+      const {title, order, image} = selection
       return {
         ...selection,
-        title: `${title}`,
+        title: title,
         subtitle: order && `order to ${order}`,
+        media: image,
       }
     },
   },
