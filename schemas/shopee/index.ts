@@ -71,12 +71,22 @@ export default defineType({
     {
       title: 'Number New',
       name: 'number',
-      by: [{field: 'number', direction: 'desc'}],
+      by: [
+        {
+          field: 'number',
+          direction: 'desc'
+        }
+      ],
     },
     {
       title: 'Number Old',
       name: 'number',
-      by: [{field: 'number', direction: 'asc'}],
+      by: [
+        {
+          field: 'number',
+          direction: 'asc'
+        }
+      ],
     },
   ],
   preview: {
@@ -89,8 +99,8 @@ export default defineType({
       const {title, number} = selection
       return {
         ...selection,
-        title: `${title}`,
-        subtitle: number && `uratan ke ${number}`,
+        title: number,
+        subtitle: `${title}`,
       }
     },
   },
