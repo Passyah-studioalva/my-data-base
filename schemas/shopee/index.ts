@@ -7,15 +7,15 @@ export default defineType({
   title: 'Shopee',
   fields: [
     defineField({
-      name: 'title',
-      title: 'Title',
-      type: 'string',
-      validation: (rule: {required: () => any}) => rule.required(),
-    }),
-    defineField({
       name: 'number',
       title: 'Number',
       type: 'number',
+      validation: (rule: {required: () => any}) => rule.required(),
+    }),
+    defineField({
+      name: 'title',
+      title: 'Title',
+      type: 'string',
       validation: (rule: {required: () => any}) => rule.required(),
     }),
     defineField({
