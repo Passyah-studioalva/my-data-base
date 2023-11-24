@@ -1,9 +1,0 @@
-header
-update height 30px announcement-bar__image
-add margin 20% di search bar
-add new logo my account
-change font size font weight placeholder search bar
-remove bg icon search bar and add color red
-change color text my account ke gray
-
-background: #D51116;
