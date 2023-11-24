@@ -7,6 +7,7 @@ import iconCategory from './shopee/iconCategory'
 import customShopee from './customShopee'
 import categoryCustom from './customShopee/categoryCustom'
 import iconCustom from './customShopee/iconCustom'
+import custom from './customShopee/custom'
 
 /* MY WEBSITE */
 import passyahRaffi from './passyahRaffi'
@@ -34,6 +35,7 @@ export const schemaTypes = [
   customShopee,
   categoryCustom,
   iconCustom,
+  custom,
 
   /* MY WEBSITE */
   passyahRaffi,
