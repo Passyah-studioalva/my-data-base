@@ -58,7 +58,7 @@ export default defineType({
     select: {
       title: 'title',
       number: 'number',
-      media: 'bgImg',
+      media: 'bgTemplate',
     },
     prepare(selection: {title: any; media: any}) {
       const {title, media} = selection
