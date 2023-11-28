@@ -1,8 +1,10 @@
 import {defineField, defineType} from 'sanity'
+import {ApiIcon} from '@sanity/icons'
 
 export default defineType({
   name: 'passyahRaffi',
   type: 'document',
+  icon: ApiIcon,
   title: 'PassyahRaffi',
   fields: [
     defineField({
@@ -26,24 +28,12 @@ export default defineType({
       },
     }),
     defineField({
-      name: 'author',
-      title: 'Author',
-      type: 'reference',
-      to: {type: 'author'},
-    }),
-    defineField({
       name: 'mainImage',
       title: 'Main image',
       type: 'image',
       options: {
         hotspot: true,
       },
-    }),
-    defineField({
-      name: 'categories',
-      title: 'Categories',
-      type: 'array',
-      of: [{type: 'reference', to: {type: 'category'}}],
     }),
     defineField({
       name: 'body',

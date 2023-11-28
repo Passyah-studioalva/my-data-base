@@ -1,28 +1,30 @@
 /* SHOPEE */
-import shopee from './shopee'
-import shopeeCategory from './shopee/shopeeCategory'
-import iconCategory from './shopee/iconCategory'
+import shopee from './1-SHOPEE/shopee'
+import shopeeCategory from './1-SHOPEE/shopee/shopeeCategory'
+import iconCategory from './1-SHOPEE/shopee/iconCategory'
 
 /* CUSTOM SHOPEE */
-import customShopee from './customShopee'
-import categoryCustom from './customShopee/categoryCustom'
-import iconCustom from './customShopee/iconCustom'
-import custom from './customShopee/custom'
+import customShopee from './2-DINAR-SHOPEE/customShopee'
+import categoryCustom from './2-DINAR-SHOPEE/customShopee/categoryCustom'
+import iconCustom from './2-DINAR-SHOPEE/customShopee/iconCustom'
+import custom from './2-DINAR-SHOPEE/customShopee/custom'
 
 /* MY WEBSITE */
-import passyahRaffi from './passyahRaffi'
+import passyahRaffi from './3-PASSYAH-WEB'
+import blogPassyahRaffi from './3-PASSYAH-WEB/blog'
+import projectPassyahRaffi from './3-PASSYAH-WEB/project'
+/* COMPONENTS - MY WEBSITE */
+import descPassyahRaffi from './3-PASSYAH-WEB/components/desc'
+import listDescPassyahRaffi from './3-PASSYAH-WEB/components/listDesc'
 
 /* WEDDING */
-import weddingv100 from './wedding/weddingv100'
-import weddingv101 from './wedding/weddingv101'
-import iconWedding from './wedding/components/iconWedding'
-import audio from './wedding/components/audio'
-import bank from './wedding/components/bank'
+import weddingv100 from './4-WEDDING/weddingv100'
+import weddingv101 from './4-WEDDING/weddingv101'
+import iconWedding from './4-WEDDING/components/iconWedding'
+import audio from './4-WEDDING/components/audio'
+import bank from './4-WEDDING/components/bank'
 
-import project from './project'
-import author from './author'
-import category from './category'
-import description from './description'
+// import author from './author'
 import blockContent from './blockContent'
 
 export const schemaTypes = [
@@ -39,6 +41,10 @@ export const schemaTypes = [
 
   /* MY WEBSITE */
   passyahRaffi,
+  blogPassyahRaffi,
+  projectPassyahRaffi,
+  descPassyahRaffi,
+  listDescPassyahRaffi,
 
   /* WEDDING */
   weddingv100,
@@ -47,9 +53,6 @@ export const schemaTypes = [
   audio,
   bank,
 
-  project,
-  author,
-  category,
-  description,
+  // author,
   blockContent,
 ]

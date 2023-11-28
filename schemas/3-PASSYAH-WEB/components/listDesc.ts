@@ -1,15 +1,12 @@
 import {defineField, defineType} from 'sanity'
+import {ApiIcon} from '@sanity/icons'
 
 export default defineType({
-  name: 'description',
-  title: 'Description',
+  name: 'listDescPassyahRaffi',
+  title: 'List Description',
   type: 'document',
+  icon: ApiIcon,
   fields: [
-    defineField({
-      name: 'title',
-      title: 'Title',
-      type: 'string',
-    }),
     defineField({
       name: 'listDesc',
       title: 'List Description',

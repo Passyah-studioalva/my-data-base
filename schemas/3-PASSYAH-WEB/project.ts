@@ -1,9 +1,11 @@
 import {defineField, defineType} from 'sanity'
+import {ApiIcon} from '@sanity/icons'
 
 export default defineType({
-  name: 'project',
+  name: 'projectPassyahRaffi',
   type: 'document',
-  title: 'Project',
+  icon: ApiIcon,
+  title: 'Project My Web',
   fields: [
     defineField({
       name: 'order',
@@ -23,12 +25,12 @@ export default defineType({
     }),
     defineField({
       name: 'bgColor',
-      title: 'Bg Color',
+      title: 'Background Color',
       type: 'string',
     }),
     defineField({
       name: 'color',
-      title: 'Color',
+      title: 'Color Text',
       type: 'string',
     }),
     defineField({
@@ -47,23 +49,30 @@ export default defineType({
       type: 'string',
     }),
     defineField({
-      name: 'mainImage',
-      title: 'Main image',
+      name: 'src',
+      title: 'Image',
       type: 'image',
       options: {
         hotspot: true,
       },
     }),
     defineField({
-      name: 'descriptions',
+      name: 'objectFit',
+      title: 'ObjectFit Image',
+      type: 'string',
+    }),
+    defineField({
+      name: 'desc',
       title: 'Descriptions',
       type: 'array',
-      of: [{
-        type: 'reference',
-        to: {
-          type: 'description'
-        }
-      }],
+      of: [
+        {
+          type: 'reference',
+          to: {
+            type: 'descPassyahRaffi',
+          },
+        },
+      ],
     }),
     defineField({
       name: 'publishedAt',

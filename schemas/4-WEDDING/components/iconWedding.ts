@@ -1,9 +1,11 @@
 import {defineField, defineType} from 'sanity'
+import { GiLinkedRings } from "react-icons/gi";
 
 export default defineType({
   name: 'iconWedding',
   title: 'Icon Wedding',
   type: 'document',
+  icon: GiLinkedRings,
   fields: [
     defineField({
       name: 'titleIcon',
