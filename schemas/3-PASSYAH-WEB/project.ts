@@ -75,6 +75,28 @@ export default defineType({
       ],
     }),
     defineField({
+      name: 'listDesc',
+      title: 'List Description',
+      type: 'array',
+      of: [{type: 'string'}],
+      // options: {
+      //   layout: 'tags'
+      // }
+    }),
+    defineField({
+      name: 'hashtag',
+      title: 'Hashtag',
+      type: 'array',
+      of: [
+        {
+          type: 'reference',
+          to: {
+            type: 'hashtagPassyahRaffi',
+          },
+        },
+      ],
+    }),
+    defineField({
       name: 'publishedAt',
       title: 'Published at',
       type: 'datetime',
