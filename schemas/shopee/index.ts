@@ -1,9 +1,11 @@
 import {defineField, defineType} from 'sanity'
+import { SiShopee } from "react-icons/si";
 
 // schemas/shopee.ts
 export default defineType({
   name: 'shopee',
   type: 'document',
+  icon: SiShopee,
   title: 'Shopee',
   fields: [
     defineField({

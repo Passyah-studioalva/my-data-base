@@ -1,10 +1,12 @@
 import {defineField, defineType} from 'sanity'
+import { RiInstagramLine } from "react-icons/ri";
 
 // schemas/shopee.ts
 export default defineType({
   name: 'customShopee',
   type: 'document',
-  title: '(#IG) Shopee Custom',
+  icon: RiInstagramLine,
+  title: 'Shopee Custom',
   fields: [
     defineField({
       name: 'number',

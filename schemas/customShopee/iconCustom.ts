@@ -1,9 +1,11 @@
 import {defineField, defineType} from 'sanity'
+import { RiInstagramLine } from "react-icons/ri";
 
 export default defineType({
   name: 'iconCustom',
-  title: '(#IG) Icon',
+  title: 'Icon',
   type: 'document',
+  icon: RiInstagramLine,
   fields: [
     defineField({
       name: 'titleIcon',
