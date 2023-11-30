@@ -69,6 +69,19 @@ export default defineType({
       of: [{type: 'string'}],
     }),
     defineField({
+      name: 'loveStory',
+      title: 'Love Story',
+      type: 'array',
+      of: [
+        {
+          type: 'reference',
+          to: {
+            type: 'loveStory',
+          },
+        },
+      ],
+    }),
+    defineField({
       name: 'countdown',
       title: `Hari, Tanggal, Jam Acara (Ex. 'Oct 27, 2025 13:00:00')`,
       type: 'string',

@@ -26,6 +26,7 @@ import weddingv101 from './4-WEDDING/weddingv101'
 import iconWedding from './4-WEDDING/components/iconWedding'
 import audio from './4-WEDDING/components/audio'
 import bank from './4-WEDDING/components/bank'
+import loveStory from './4-WEDDING/components/loveStory'
 
 // import author from './author'
 import blockContent from './blockContent'
@@ -56,6 +57,7 @@ export const schemaTypes = [
   iconWedding,
   audio,
   bank,
+  loveStory,
 
   // author,
   blockContent,
