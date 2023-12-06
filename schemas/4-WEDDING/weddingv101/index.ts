@@ -69,6 +69,19 @@ export default defineType({
       of: [{type: 'string'}],
     }),
     defineField({
+      name: 'ourGallery',
+      title: 'Our Gallery',
+      type: 'array',
+      of: [
+        {
+          type: 'reference',
+          to: {
+            type: 'ourGallery',
+          },
+        },
+      ],
+    }),
+    defineField({
       name: 'loveStory',
       title: 'Love Story',
       type: 'array',
