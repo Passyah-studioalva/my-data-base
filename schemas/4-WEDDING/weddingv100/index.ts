@@ -14,6 +14,11 @@ export default defineType({
       validation: (rule: {required: () => any}) => rule.required(),
     }),
     defineField({
+      name: 'template',
+      title: 'Template',
+      type: 'string',
+    }),
+    defineField({
       name: 'iconWedding',
       title: 'Icon',
       type: 'reference',
