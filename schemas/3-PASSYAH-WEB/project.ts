@@ -72,6 +72,11 @@ export default defineType({
       type: 'string',
     }),
     defineField({
+      name: 'paddingImg',
+      title: 'Padding Image',
+      type: 'string',
+    }),
+    defineField({
       name: 'desc',
       title: 'Descriptions',
       type: 'array',
