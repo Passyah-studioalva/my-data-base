@@ -24,6 +24,11 @@ export default defineType({
       type: 'string',
     }),
     defineField({
+      name: 'borderColor',
+      title: 'Border Color',
+      type: 'string',
+    }),
+    defineField({
       name: 'bgColorImg',
       title: 'Background Image Color',
       type: 'string',
