@@ -12,8 +12,7 @@ import iconCustom from './2-DINAR-SHOPEE/customShopee/iconCustom'
 import custom from './2-DINAR-SHOPEE/customShopee/custom'
 
 /* MY WEBSITE */
-import passyahRaffi from './3-PASSYAH-WEB'
-import blogPassyahRaffi from './3-PASSYAH-WEB/blog'
+import blogPassyahRaffi from './3-PASSYAH-WEB'
 import projectPassyahRaffi from './3-PASSYAH-WEB/project'
 /* COMPONENTS - MY WEBSITE */
 import descPassyahRaffi from './3-PASSYAH-WEB/components/desc'
@@ -21,7 +20,6 @@ import hashtagPassyahRaffi from './3-PASSYAH-WEB/components/hashtag'
 
 /* WEDDING */
 import weddingv100 from './4-WEDDING/weddingv100'
-import weddingv101 from './4-WEDDING/weddingv101'
 /* COMPONENTS - WEDDING */
 import iconWedding from './4-WEDDING/components/iconWedding'
 import audio from './4-WEDDING/components/audio'
@@ -45,7 +43,6 @@ export const schemaTypes = [
   custom,
 
   /* MY WEBSITE */
-  passyahRaffi,
   blogPassyahRaffi,
   projectPassyahRaffi,
   /* COMPONENTS - MY WEBSITE */
@@ -54,7 +51,6 @@ export const schemaTypes = [
 
   /* WEDDING */
   weddingv100,
-  weddingv101,
   iconWedding,
   audio,
   bank,

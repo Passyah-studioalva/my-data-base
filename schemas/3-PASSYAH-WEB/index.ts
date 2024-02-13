@@ -2,10 +2,10 @@ import {defineField, defineType} from 'sanity'
 import {ApiIcon} from '@sanity/icons'
 
 export default defineType({
-  name: 'passyahRaffi',
+  name: 'blogPassyahRaffi',
   type: 'document',
   icon: ApiIcon,
-  title: 'PassyahRaffi',
+  title: 'Blog My Web',
   fields: [
     defineField({
       name: 'order',
